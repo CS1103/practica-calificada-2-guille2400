@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     heap<int> h;
-    load_from("data.txt", h);
+    h.load_from("data.txt");
     cout << "heap" << endl;
     cout << h;
     h.insert(10);
@@ -21,10 +21,10 @@ int main()
     cin >> h;
     cout << "heap" << endl;
     cout << h;
-    insert(h, 100, 200);
+    h.insert(100, 200);
     cout << "heap" << endl;
     cout << h;
-    load_from("data.txt", h);
+    h.load_from("data.txt");
     cout << h;
     return 0;
 }
